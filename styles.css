@@ -1,0 +1,56 @@
+body{
+    background-color: aliceblue;
+}
+.flex-container{
+    display: flex;
+    flex-direction: row;
+}
+.menu{
+    background-color: antiquewhite;
+    width: 17%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+/* New CSS */
+.footer {
+    background-color: antiquewhite;
+    display: none; /* Hide by default */
+    position: fixed;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    /* Add other styles as needed */
+}
+
+@media (max-width: 767px) {
+    .menu {
+        display: none; /* Hide menu */
+    }
+    .footer {
+        display: block; /* Show footer */
+    }
+}
+
+@media (max-width: 1263px) {
+    .menu {
+        width: 100px;
+    }
+}
+
+
+.content{
+    margin-left: 33%;
+}
+.blog-post{
+    width: 75%;
+}
+.contact-card{
+    width: 25%;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
