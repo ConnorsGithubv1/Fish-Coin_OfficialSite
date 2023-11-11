@@ -1,137 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN6b1QI5nX2NlE+0IBj1uZ1a7kF98ds5" crossorigin="anonymous">
-  <style>
-    .flex-container{
-    display: flex;
-    flex-direction: row;
-}
-
-@media (max-width: 767px) {
-    .menu {
-        display: none; /* Hide menu */
-        
-    }
-    .menufooter {
-        display: block; /* Show footer */
-        background-color: antiquewhite;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        height: 100px;
-        width: 100%;
-        /* Add other styles as needed */
-    }
-
-}
-
-
-
-@media (max-width: 1263px) {
-    .menu {
-        width: 100px;
-    }
-}
-
-
-.content{
-    margin-left: 33%;
-}
-.blog-post{
-    width: 75%;
-}
-.contact-card{
-    width: 25%;
-}
-img{
-    max-width: 100%;
-    height: auto;
-}
-
-    .navbar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      
-      width: 100px;
-      height: 100%;
-      z-index: 1000; /* Adjust as needed */
-      background-color: aqua;
-    }
-
-    @media (max-width: 767px) {
-      .navbar {
-        position: fixed;
-        height: 100px;
-        width: 100%;
-        bottom: 0;
-        top: auto;
-      }
-    }
-  </style>
-  <title>Responsive Bootstrap Navbar</title>
-</head>
-<body>
-
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Your Brand</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Services</a>
-        </li>
-        <!-- Add more menu items as needed -->
-      </ul>
-    </div>
-  </div>
-</nav>
-<div class="content flex-container">
-    <div class="blog-post">
-        <div class="post">
-            <h3>Title</h3>
-            <br>
-            <img src="images/1.jpg"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+            <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <div class="menu">
+            <ul>
+                <li>Home</li>
+                <li>Messages</li>
+                <li>About</li>
+            </ul>
         </div>
-        <div class="post">
-            <h3>Title</h3>
-            <br>
-            <img src="images/2.jpg"/>
-        </div>
-        <div class="post">
-            <h3>Title</h3>
-            <br>
-            <img src="images/3.jpg"/>
-        </div>
-        <div class="post">
-            <h3>Title</h3>
-            <br>
-            <img src="images/4.jpg"/>
-        </div>
-        <div class="post">
-            <h3>Title</h3>
-            <br>
-            <img src="images/5.jpg"/>
-        </div>
-    </div>
-    <div class="contact-card">
-        <h3>Connor Smith</h3>
-    </div>
-</div>
-<!-- Your content goes here -->
+        <div class="content flex-container">
+                <div class="blog-post">
+                    <div class="post">
+                        <h3>Title</h3>
+                        <br>
+                        <img src="images/1.jpg"/>
+                        <div class="postfooter"></div>
+                    </div>
+                    <div class="post">
+                        <h3>Title</h3>
+                        <br>
+                        <img src="images/2.jpg"/>
+                        <div class="postfooter"></div>
+                    </div>
+                    <div class="post">
+                        <h3>Title</h3>
+                        <br>
+                        <img src="images/3.jpg"/>
+                        <div class="postfooter"></div>
+                    </div>
+                    <div class="post">
+                        <h3>Title</h3>
+                        <br>
+                        <img src="images/4.jpg"/>
+                        <div class="postfooter"></div>
+                    </div>
+                    <div class="post">
+                        <h3>Title</h3>
+                        <br>
+                        <img src="images/5.jpg"/>
+                        <div class="postfooter"></div>
+                    </div>
+                </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-cC2HqU7/c6AgNEsZl4nAua3IUqMT4NSF2aDd56quzX3+gZwP5TiNz6daGZH1X6z" crossorigin="anonymous"></script>
+
+                <div class="contact-card">
+                    
+                </div>
+        </div>
+
+
+        <div class="menufooter">
+            <h1>menu footer</h1>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-cC2HqU7/c6AgNEsZl4nAua3IUqMT4NSF2aDd56quzX3+gZwP5TiNz6daGZH1X6z" crossorigin="anonymous"></script>
 </body>
 </html>

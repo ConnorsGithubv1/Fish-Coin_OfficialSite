@@ -1,20 +1,26 @@
 body{
     background-color: aliceblue;
 }
-.flex-container{
-    display: flex;
-    flex-direction: row;
-}
+
+
+/*menu and footer-----------------------------------------------------------------------------------------------------------------------*/
+
 .menu{
     background-color: antiquewhite;
-    width: 17%;
+    max-width: 319px;
+    width: 219px;
     position: fixed;
     top: 0;
     left: 0;
     height: 100%;
 }
 
-/* New CSS */
+@media (max-width: 1301px) {
+    .menu {
+        width: 100px;
+    }
+}
+
 .footer {
     background-color: antiquewhite;
     display: none; /* Hide by default */
@@ -24,6 +30,8 @@ body{
     width: 100%;
     /* Add other styles as needed */
 }
+
+
 
 @media (max-width: 767px) {
     .menu {
@@ -36,32 +44,79 @@ body{
         position: fixed;
         bottom: 0;
         left: 0;
-        height: 100px;
+        height: 50px;
         width: 100%;
         /* Add other styles as needed */
     }
 
-}
-
-
-
-@media (max-width: 1263px) {
-    .menu {
-        width: 100px;
+    .contact-card {
+        display: none;
     }
+
+
 }
 
 
-.content{
-    margin-left: 33%;
-}
-.blog-post{
-    width: 75%;
-}
-.contact-card{
-    width: 25%;
-}
 img{
     max-width: 100%;
     height: auto;
+}
+
+
+
+/* content div ------------------------------------------------------------------------------------------------------------------------*/
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Center horizontally */
+}
+
+.content{
+    margin-left: 219px; /* 20px is the padding of the .menu div */
+}
+
+.contact-card{
+    max-width: 319px;
+    width: 319px;
+    height: 100%;
+}
+
+@media (max-width: 967px){
+    .contact-card{
+        display: none;
+    }
+}
+
+.contact-post{
+    background-color: aqua;
+    height: 200px;
+    top: 0;
+}
+
+.whitespace{
+    height: 100%;
+}
+
+@media (max-width: 767px) {
+    .content {
+        margin-left: 0;
+    }
+}
+
+.blog-post{
+    justify-content: center; /* Center horizontally */
+    max-width: 630px;
+    width: 630px;
+    background-color: mintcream;
+    padding: 15px;
+}
+
+.post{
+    max-width: 468px;
+    background-color: rgb(198, 227, 255);
+    padding: 20px 0; /* Add 20px padding to top and bottom */
+}
+.postfooter{
+    height: 216px;
+    background-color: white;
 }
